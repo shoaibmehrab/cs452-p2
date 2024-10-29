@@ -74,10 +74,10 @@ void test_queue_dequeue_shutdown(void)
 }
 
 int main(void) {
-  // UNITY_BEGIN();
-  // RUN_TEST(test_create_destroy);
-  // RUN_TEST(test_queue_dequeue);
-  // RUN_TEST(test_queue_dequeue_multiple);
-  // RUN_TEST(test_queue_dequeue_shutdown);
-  // return UNITY_END();
+  UNITY_BEGIN();
+  RUN_TEST(test_create_destroy);
+  RUN_TEST(test_queue_dequeue);
+  RUN_TEST(test_queue_dequeue_multiple);
+  RUN_TEST(test_queue_dequeue_shutdown);
+  return UNITY_END();
 }

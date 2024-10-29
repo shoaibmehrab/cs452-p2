@@ -192,6 +192,8 @@ int main(int argc, char *argv[])
           pthread_join(producers[i], NULL);
      }
 
+     set_print_shutdown_message(true);
+
      // Once all the producers are finished we set a flag so the consumer thread can finish up
      // Once shutdown is called your queue should drain all remaining items and be read for
      // destruction!
